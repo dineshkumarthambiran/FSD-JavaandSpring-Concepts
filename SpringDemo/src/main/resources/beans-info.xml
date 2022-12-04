@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mycar" class="org.NWSpringdemo.SpringDemo.Car">
+    <property name="Color" value="red"></property>
+    <property name="Model" value="BMW"></property>
+    <property name="year" value="2022"></property>
+    </bean>
+    
+    <bean id="Dinesh" class="org.NWSpringdemo.SpringDemo.Car">
+    <property name="Color" value="Green"></property>
+     <property name="Model" value="Audi"></property>
+    <property name="year" value="2021"></property>
+    </bean>
+    
+     <bean id="Raja" class="org.NWSpringdemo.SpringDemo.Car">
+    <property name="Color" value="blue"></property>
+     <property name="Model" value="Benz"></property>
+    <property name="year" value="2020"></property>
+    </bean>
+
+</beans>

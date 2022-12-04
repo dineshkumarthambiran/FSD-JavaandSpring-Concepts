@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" default-init-method="init" default-destroy-method="destroy">
+
+    <bean id="mymentor" class="org.NWSpringdemo.BeanLifecycle.Mentor" >
+    <property name="mid" value="1"></property>
+    <property name="mname" value="Dinesh"></property>
+    <property name="salary" value="20222"></property>
+    </bean>
+    
+    <bean id="student" class="org.NWSpringdemo.BeanLifecycle.Student" >
+    <property name="sid" value="2"></property>
+    <property name="sname" value="Dina"></property>
+  
+    </bean>
+    
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
+    
+    <bean id="school" class="org.NWSpringdemo.BeanLifecycle.School" >
+    <property name="schName" value="zion"></property>
+    <property name="location" value="chennai"></property>
+  
+    </bean>
+    
+     <bean id="hostel" class="org.NWSpringdemo.BeanLifecycle.Hostel" >
+    <property name="hosName" value="thomas"></property>
+    <property name="location" value="mcc"></property>
+  
+    </bean>
+    
+  
+
+</beans>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+     <bean id="myengine" class="org.NWSpringdemo.BeanScope.Engine" scope="prototype">
+    <property name="engineno" value="123"></property>
+    <property name="enginename" value="BMWengine"></property>
+    </bean>   
+
+    <bean id="mycar" class="org.NWSpringdemo.BeanScope.Car" scope="prototype">
+    <property name="Color" value="red"></property>
+    <property name="Model" value="BMW"></property>
+    <property name="year" value="2022"></property>
+    <property name="engine" ref="myengine"></property>
+    </bean>
+    
+    <bean id="mybike" class="org.NWSpringdemo.BeanScope.Bike" >
+    <constructor-arg name="model" value="honda"></constructor-arg>
+    <constructor-arg name="Color" value="black"></constructor-arg>
+    <constructor-arg name="owner" value="dina"></constructor-arg>
+    </bean>
+    
+    </beans>
